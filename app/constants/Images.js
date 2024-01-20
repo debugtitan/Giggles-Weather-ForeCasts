@@ -1,10 +1,9 @@
 const IMAGES = {
     bg: require("../../assets/media/bg.jpg"),
-    partlyCloudy: require("../../assets/media/partcloudly.png")
-}
-
-export const ICONS = {
-    home: require("../../assets/icons/home.png") 
+    partlyCloudy: require("../../assets/media/partcloudly.png"),
+    heavyRain: require("../../assets/media/heavyrain.png"),
+    drop: require("../../assets/media/drop.png"),
+    sunny: require("../../assets/media/sun.png")
 }
 
 export default IMAGES;

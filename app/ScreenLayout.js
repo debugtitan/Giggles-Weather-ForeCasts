@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { View, Text, Image, SafeAreaView } from "react-native";
+import { View, Text, Image, SafeAreaView, ScrollView } from "react-native";
 import React from "react";
 import { IMAGES } from "./constants";
 
@@ -12,9 +12,11 @@ export default function ScreenLayout({ children }) {
         className="absolute w-full h-full"
         blurRadius={120}
   />*/}
-      <SafeAreaView className="flex flex-1">
-        <View className=" mt-14 mx-4 z-50">{children}</View>
-      </SafeAreaView>
+      <ScrollView>
+        <SafeAreaView className="flex flex-1">
+          <View className=" mt-14 mx-4 z-50">{children}</View>
+        </SafeAreaView>
+      </ScrollView>
     </View>
   );
 }
