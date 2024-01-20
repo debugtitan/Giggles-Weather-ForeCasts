@@ -4,10 +4,13 @@ import ScreenLayout from "../ScreenLayout";
 
 export default function () {
   return (
-    <ScreenLayout>
-      <View>
-        <Text>HomeScreen</Text>
-      </View>
-    </ScreenLayout>
+      <ScreenLayout>
+        <View>
+          <Text className=" text-white">
+            hello welcome
+          </Text>
+        </View>
+      </ScreenLayout>
+
   );
 }
