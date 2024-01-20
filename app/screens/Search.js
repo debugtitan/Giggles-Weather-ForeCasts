@@ -1,10 +1,13 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React from "react";
+import ScreenLayout from "../ScreenLayout";
 
 export default function Search() {
   return (
-    <View>
-      <Text>Search</Text>
-    </View>
-  )
+    <ScreenLayout>
+      <View>
+        <Text>Search</Text>
+      </View>
+    </ScreenLayout>
+  );
 }

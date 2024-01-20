@@ -6,7 +6,7 @@ import {
   HomeIcon,
   MagnifyingGlassIcon,
   ChartBarIcon,
-} from "react-native-heroicons/outline";
+} from "react-native-heroicons/solid";
 import { StyleSheet, Text, View, Image } from "react-native";
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -37,17 +37,9 @@ const GiggleBottomTabs = () => {
         options={{
           tabBarIcon: ({ focused }) => (
             <View className="items-center justify-center top-1">
-              <HomeIcon size="22" color={focused ? "#e2f451" : "#748c94"} />
-
-              <Text
-                style={{
-                  color: focused ? "#e2f451" : "#748c94",
-                  fontSize: 12,
-                }}
-              >
-                Home
-              </Text>
+              <HomeIcon size="24" color={focused ? "#5F68D3" : "#5FCDD3"} />
             </View>
+            
           ),
         }}
       />
@@ -57,16 +49,7 @@ const GiggleBottomTabs = () => {
         options={{
           tabBarIcon: ({ focused }) => (
             <View className="items-center justify-center top-1">
-              <MagnifyingGlassIcon size="22" color={focused ? "#e2f451" : "#748c94"} />
-
-              <Text
-                style={{
-                  color: focused ? "#e2f451" : "#748c94",
-                  fontSize: 12,
-                }}
-              >
-                Search
-              </Text>
+              <MagnifyingGlassIcon size="24" color={focused ? "#5F68D3" : "#5FCDD3"} />
             </View>
           ),
         }}
@@ -77,16 +60,7 @@ const GiggleBottomTabs = () => {
         options={{
           tabBarIcon: ({ focused }) => (
             <View className="items-center justify-center top-1">
-              <ChartBarIcon size="22" color={focused ? "#e2f451" : "#748c94"} />
-
-              <Text
-                style={{
-                  color: focused ? "#e2f451" : "#748c94",
-                  fontSize: 12,
-                }}
-              >
-                Forecast
-              </Text>
+              <ChartBarIcon size="24" color={focused ? "#5F68D3" : "#5FCDD3"} />
             </View>
           ),
         }}

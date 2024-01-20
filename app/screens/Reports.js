@@ -1,10 +1,13 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React from "react";
+import ScreenLayout from "../ScreenLayout";
 
 export default function Reports() {
   return (
-    <View>
-      <Text>Reports</Text>
-    </View>
-  )
+    <ScreenLayout>
+      <View>
+        <Text>Reports</Text>
+      </View>
+    </ScreenLayout>
+  );
 }
