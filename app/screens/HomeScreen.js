@@ -1,16 +1,34 @@
-import { View, Text } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import ScreenLayout from "../ScreenLayout";
+import { IMAGES, THEMES } from "../constants";
 
 export default function () {
   return (
-      <ScreenLayout>
-        <View>
-          <Text className=" text-white">
-            hello welcome
+    <ScreenLayout>
+      <View className=" mt-20 mx-4 z-50">
+        <View className="justify-center items-center mb-10">
+          <Image source={IMAGES.partlyCloudy} className="mt-20 self-center" />
+        </View>
+        <View className="flex mt-8 p-3">
+          <Text className="text-white text-4xl font-bold text-center mb-5">
+            Discover the Weather in your City
+          </Text>
+
+          <Text
+            style={{ color: THEMES.bgWhite(0.5), fontSize: 20 }}
+            className="text-center"
+          >
+            Get to know your weather maps and radar forecast information.
           </Text>
         </View>
-      </ScreenLayout>
+      </View>
 
+      <View className=" mt-32">
+        <TouchableOpacity className="mx-4 items-center p-4 border-none rounded-lg  bg-blue-500">
+          <Text className="text-white text-xl">Get Started</Text>
+        </TouchableOpacity>
+      </View>
+    </ScreenLayout>
   );
 }
