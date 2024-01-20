@@ -5,7 +5,7 @@ import { IMAGES } from "./constants";
 
 export default function ScreenLayout({ children }) {
   return (
-    <View className="flex-1 relative bg-slate-900">
+    <View className="flex-1 relative bg-black">
       <StatusBar style="light" />
       {/*<Image
         source={IMAGES.bg}
