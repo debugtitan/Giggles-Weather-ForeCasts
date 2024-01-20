@@ -5,13 +5,13 @@ import { IMAGES } from "./constants";
 
 export default function ScreenLayout({ children }) {
   return (
-    <View className="flex-1 relative">
+    <View className="flex-1 relative bg-black">
       <StatusBar style="light" />
-      <Image
+      {/*<Image
         source={IMAGES.bg}
         className="absolute w-full h-full"
-        blurRadius={40}
-      />
+        blurRadius={120}
+  />*/}
       <SafeAreaView className="flex flex-1">{children}</SafeAreaView>
     </View>
   );
