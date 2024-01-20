@@ -5,14 +5,16 @@ import { IMAGES } from "./constants";
 
 export default function ScreenLayout({ children }) {
   return (
-    <View className="flex-1 relative bg-black">
+    <View className="flex-1 relative bg-slate-800">
       <StatusBar style="light" />
       {/*<Image
         source={IMAGES.bg}
         className="absolute w-full h-full"
         blurRadius={120}
   />*/}
-      <SafeAreaView className="flex flex-1">{children}</SafeAreaView>
+      <SafeAreaView className="flex flex-1">
+        <View className=" mt-14 mx-4 z-50">{children}</View>
+      </SafeAreaView>
     </View>
   );
 }

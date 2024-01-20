@@ -3,4 +3,8 @@ const IMAGES = {
     partlyCloudy: require("../../assets/media/partcloudly.png")
 }
 
+export const ICONS = {
+    home: require("../../assets/icons/home.png") 
+}
+
 export default IMAGES;

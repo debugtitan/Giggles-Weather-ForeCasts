@@ -1,3 +1,3 @@
-import IMAGES from "./Images"
+import IMAGES,{ICONS} from "./Images"
 import THEMES from "./theme";
-export  {IMAGES,THEMES};
+export  {IMAGES,THEMES,ICONS};
