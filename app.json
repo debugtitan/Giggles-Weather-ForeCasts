@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.debugtitan.gigglesweather"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {},
+    "plugins": [
+      [
+        "expo-build-properties"
+      ]
+    ]
   }
 }
